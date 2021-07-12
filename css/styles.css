@@ -210,6 +210,7 @@ img {
 }
 
 .site-nav-list .current {
+  position: relative;
   color: var(--primary-accent-color);
 }
 
@@ -254,6 +255,23 @@ img {
 .footer-contacts .link:hover {
   color: var(--primary-accent-color);
   fill: var(--primary-accent-color);
+}
+
+/* ---------Полоска активной вкладки position: relative строка 174 */
+
+.site-nav .link {
+  /* position: relative; */
+}
+
+.site-nav .link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 46px;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-accent-color);
+  border-radius: 2px;
 }
 
 /* Sections */
