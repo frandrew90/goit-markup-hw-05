@@ -15,6 +15,11 @@
   --secondary-bg-color: #e5e5e5;
 
   --card-set-gap: 30px;
+
+  /* -------------Переменные переходов */
+
+  --transition-time: 250ms;
+  --transition-time-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* палитра текста */
