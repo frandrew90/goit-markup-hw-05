@@ -18,7 +18,7 @@
 
   /* -------------Переменные переходов */
 
-  --transition-time: 2500ms;
+  --transition-time: 250ms;
   --transition-time-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -518,6 +518,7 @@ img {
 }
 
 .team .social-item .link .social-box {
+  border-radius: 50%;
   transition: background-color var(--transition-time)
     var(--transition-time-func);
 }
@@ -525,7 +526,6 @@ img {
 .team .social-item .link:hover .social-box,
 .team .social-item .link:hover .social-box {
   background-color: var(--primary-accent-color);
-  border-radius: 50%;
 }
 
 .team .social-icon {
