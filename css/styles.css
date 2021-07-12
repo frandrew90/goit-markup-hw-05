@@ -202,6 +202,11 @@ img {
   margin-right: 50px;
 }
 
+.site-nav-list .link {
+  transition: color var(--transition-time) var(--transition-time-func),
+    fill var(--transition-time) var(--transition-time-func);
+}
+
 .site-nav-list .current {
   position: relative;
   color: var(--primary-accent-color);
@@ -218,6 +223,11 @@ img {
   fill: var(--primary-text-color);
 
   display: flex;
+}
+
+.header-contacts-list .link {
+  transition: color var(--transition-time) var(--transition-time-func),
+    fill var(--transition-time) var(--transition-time-func);
 }
 
 .header-contacts-item {
@@ -498,9 +508,18 @@ img {
   align-items: center;
 }
 
+.team .social-item .link .social-icon {
+  transition: fill var(--transition-time) var(--transition-time-func);
+}
+
 .team .social-item .link:hover .social-icon,
 .team .social-item .link:focus .social-icon {
   fill: var(--secondary-accent-color);
+}
+
+.team .social-item .link .social-box {
+  transition: background-color var(--transition-time)
+    var(--transition-time-func);
 }
 
 .team .social-item .link:hover .social-box,
@@ -536,6 +555,8 @@ img {
   padding: 16px 32px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition: border var(--transition-time) var(--transition-time-func);
 }
 
 .clients-icon {
@@ -543,6 +564,8 @@ img {
   height: 60px;
 
   fill: #afb1b8;
+
+  transition: fill var(--transition-time) var(--transition-time-func);
 }
 
 .clients-item .link:hover .clients-icon,
@@ -750,6 +773,8 @@ img {
 
 .footer-contacts .link {
   color: var(--footer-link-color);
+
+  transition: color var(--transition-time) var(--transition-time-func);
 }
 
 .footer-contacts-item:not(:last-child) {
@@ -766,6 +791,11 @@ img {
 
 .footer-links {
   margin-left: 70px;
+}
+
+.footer-links .social-item .link .social-box {
+  transition: background-color var(--transition-time)
+    var(--transition-time-func);
 }
 
 .footer-links .social-item .link:hover .social-icon,
