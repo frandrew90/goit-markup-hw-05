@@ -857,6 +857,8 @@ img {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity var(--transition-time) var(--transition-time-func);
 }
 
 .modal-icon {
@@ -879,4 +881,8 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  opacity: 0;
 }
